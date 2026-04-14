@@ -1,47 +1,5 @@
-.aside{
-  padding: 10px;
-  background: rgb(202, 54, 54);
-}
-body {
-  margin: 0;
-  font-family: Arial;
-}
-
-/* Navbar */
-.navbar {
-  background: #333;
-  color: white;
-  padding: 10px;
+.container{
   display: flex;
-  justify-content: space-between;
-}
-
-.navbar ul {
-  display: flex;
-  list-style: none;
-  gap: 10px;
-}
-
-.main {
-  flex: 3;
-}
-
-/* Secciones */
-.section {
-  background: #ddd;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-
-.home {
-  background: #ccc;
-  padding: 10px;
-}
-
-/* Footer */
-.footer {
-  background: #333;
-  color: white;
-  text-align: center;
-  padding: 10px;
+  gap: 55px;
+  padding: 20px;
 }

@@ -1,8 +1,9 @@
-import React from 'react'
+//import React from 'react'
+import './Footer.css'
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className='footer'>
         <p>2023 Mi Sitio Web. Todos los derechos reservados.</p>
     </footer>
   )
