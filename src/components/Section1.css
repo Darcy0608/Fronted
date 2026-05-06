@@ -1,5 +1,24 @@
-.section1{
-    background-color: rgb(17, 137, 167);
-    padding: 15px;
-    flex: 1;
+div {
+  margin-bottom: 15px;
+}
+
+.interaccion {
+  border: 1px solid black;
+  padding: 10px;
+  background-color: #eeeeee; /* Gris muy claro */
+}
+
+.caja_navegacion {
+  border: 1px solid rgb(95, 11, 63);
+  padding: 10px;
+  background-color: #e0e0ff; /* Azul muy claro */
+}
+
+.boton_navegar {
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+input {
+  margin: 5px 0;
 }
