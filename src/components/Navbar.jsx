@@ -14,7 +14,7 @@ const Navbar = () => {
             <Link to="/servicios">Servicios</Link> {/* Usamos /servicios para que coincida con la ruta que creamos en App.jsx */}
           </li>
           <li>
-            <Link to="/contact">Contacto</Link>
+            <Link to="/contacto">Contacto</Link>
           </li>
         </ul>
       </nav>
