@@ -1,10 +1,22 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
+import React from 'react'
+import Section1 from './components/Section1'
+import Section2 from './components/Section2'
 import App from './App.jsx'
+import './index.css'
 
-createRoot(document.getElementById('root')).render(
+import ReactDOM from 'react-dom/client'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
+ReactDom.createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <BrowserRouter> {/* Componente de la app para que las url funcionen */}
+      <Routes>
+
+        <Route path="/" element={<App />}> {/* App es la base fija, contiene el Navbar y el Footer */}  
+          <Route index element={<Section1 />}/> {/* La Section1 será lo que se vea en el inicio, el contenido por defecto */}
+          <Route path="servicios" element={<Section2 />}/> {/* La Section2 se verá cuando se entre a /servicios */}
+        </Route>
+      </Routes>
+    </BrowserRouter>
   </StrictMode>,
 )

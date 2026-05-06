@@ -1,16 +1,24 @@
 //import React from 'react'
+import { Link } from 'react-router-dom'; // Importamos Link para navegación interna
 import './Navbar.css'
 
 const Navbar = () => {
   return (
       <nav className='navbar'>
         <ul> {/* Creamos un menu de navegacion */}
-            <li><a href="/">Inicio</a></li>
-            <li><a href="/about">Servicios</a></li>
-            <li><a href="/contact">Contact</a></li>
+          <li>
+            <Link to="/">Inicio</Link>
+          </li>
+          <li>
+              
+            <Link to="/servicios">Servicios</Link> {/* Usamos /servicios para que coincida con la ruta que creamos en App.jsx */}
+          </li>
+          <li>
+            <Link to="/contact">Contacto</Link>
+          </li>
         </ul>
       </nav>
   )
 }
 
-export default Navbar
+export default Navbar;
